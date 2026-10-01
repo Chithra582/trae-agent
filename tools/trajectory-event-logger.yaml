@@ -1,0 +1,19 @@
+name: trajectory-event-logger
+description: Records structured step-by-step actions, tool payloads, and observations
+  into JSON trajectory logs.
+input_schema:
+  type: object
+  properties:
+    step_index:
+      type: integer
+      description: Monotonically increasing step counter.
+    action_type:
+      type: string
+      description: Type of action (tool_call, thought, observation, error).
+    payload:
+      type: object
+      description: Structured payload recording the event details.
+  required:
+  - step_index
+  - action_type
+  - payload

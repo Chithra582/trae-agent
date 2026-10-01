@@ -1,0 +1,15 @@
+name: lakeview-digest-generator
+description: Compiles technical execution logs into concise natural language summaries
+  for operator visibility.
+input_schema:
+  type: object
+  properties:
+    step_action:
+      type: string
+      description: Description of the operation just executed.
+    step_result:
+      type: string
+      description: Execution result or error message observed.
+  required:
+  - step_action
+  - step_result

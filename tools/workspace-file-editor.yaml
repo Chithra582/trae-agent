@@ -1,0 +1,22 @@
+name: workspace-file-editor
+description: Applies targeted string replacements and multi-line edits to project
+  files with syntax preservation.
+input_schema:
+  type: object
+  properties:
+    file_path:
+      type: string
+      description: Absolute or relative path to the target file.
+    target_content:
+      type: string
+      description: Exact text chunk to be replaced.
+    replacement_content:
+      type: string
+      description: New replacement content.
+    start_line:
+      type: integer
+      description: Optional starting line number of the target block.
+  required:
+  - file_path
+  - target_content
+  - replacement_content

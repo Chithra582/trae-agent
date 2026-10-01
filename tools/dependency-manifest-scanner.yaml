@@ -1,0 +1,14 @@
+name: dependency-manifest-scanner
+description: Audits repository dependencies, configuration files (pyproject.toml,
+  uv.lock), and environment variables.
+input_schema:
+  type: object
+  properties:
+    project_root:
+      type: string
+      description: Root path of the project to inspect.
+    check_security_advisories:
+      type: boolean
+      description: Whether to query vulnerability databases.
+  required:
+  - project_root

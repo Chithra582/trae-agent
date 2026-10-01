@@ -1,0 +1,17 @@
+name: shell-command-executor
+description: Executes local terminal commands with timeout limits, return code inspection,
+  and output truncation.
+input_schema:
+  type: object
+  properties:
+    command:
+      type: string
+      description: Shell command string to execute.
+    working_dir:
+      type: string
+      description: 'Directory to run command inside (default: project root).'
+    timeout_seconds:
+      type: integer
+      description: 'Maximum seconds before terminating process (default: 30).'
+  required:
+  - command

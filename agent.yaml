@@ -1,0 +1,24 @@
+spec_version: "0.1.0"
+name: trae-agent
+version: 0.1.0
+description: Autonomous software engineering agent featuring Lakeview trajectory summarization, multi-LLM routing, and surgical codebase patching.
+license: MIT
+author: ByteDance, Chithra582 & OpenGAP Contributors
+
+metadata:
+  domain: Developer Tools / Autonomous Software Engineering & Trajectory Analysis
+  category: Developer Tools
+
+skills:
+  - codebase-navigation-patching
+  - lakeview-step-summarizer
+  - sequential-thinking-planner
+  - bash-execution-sandbox
+  - multi-llm-routing-adapter
+
+tools:
+  - workspace-file-editor
+  - trajectory-event-logger
+  - lakeview-digest-generator
+  - shell-command-executor
+  - dependency-manifest-scanner
